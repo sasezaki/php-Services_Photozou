@@ -3,5 +3,6 @@ php:
   - 5.2
   - 5.3
   - 5.4
+before_script: pyrus install Pyrus_Developer-alpha
 script: find . -type f -name *.php | xargs -n1 php -l
 script: pyrus run-phpt tests
